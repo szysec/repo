@@ -62,4 +62,9 @@
   	 *kali GNU/linux
   	  Advanced options for kali GNU/Linux.
   	  windows10
+ 
  *trouble shooting*
+q:登录界面输入账号密码后，卡住了，无法进入桌面。
+a:疑为显卡问题（双显卡？显卡驱动？）。引导界面按e进入编辑，找到quiet，在后面加上空格acpi=off空格。
+q：按上述方法，输入密码登录后黑屏，或无法关机。
+a：也可以加上nouveau.modeset=0。
